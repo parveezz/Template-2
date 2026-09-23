@@ -10,12 +10,12 @@ const Branding = () => {
     ];
 
     return (
-        <section className="w-full min-h-screen bg-[#fafafa] px-5 py-12 text-[#202020] md:px-8 lg:px-10">
+        <section className="w-full min-h-screen bg-surface-muted px-5 py-12 text-text-main md:px-8 lg:px-10">
             <div className="mx-auto w-full max-w-[1250px]">
 
                 {/* Hero */}
-                <div className="border-b border-[#bdbdbd] pb-8 md:pb-12">
-                    <p className="mb-5 font-sans text-[10px] font-semibold uppercase tracking-[3px] text-[#666]">
+                <div className="border-b border-border pb-8 md:pb-12">
+                    <p className="mb-5 font-sans text-[10px] font-semibold uppercase tracking-[3px] text-text-muted">
                         Our Services
                     </p>
 
@@ -23,14 +23,14 @@ const Branding = () => {
                         Branding
                     </h1>
 
-                    <p className="mt-8 max-w-[700px] font-sans text-[14px] leading-7 text-[#555] md:text-[16px] md:leading-8">
+                    <p className="mt-8 max-w-[700px] font-sans text-[14px] leading-7 text-text-muted md:text-[16px] md:leading-8">
                         We create distinctive brand identities that communicate who you
                         are, what you stand for, and why your audience should choose you.
                     </p>
                 </div>
                 
                 {/* Hero Image */}
-                <div className="mt-12 aspect-[21/9] w-full overflow-hidden bg-[#ebebeb]">
+                <div className="mt-12 aspect-[21/9] w-full overflow-hidden bg-surface-muted">
                    <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?q=80&w=2000&auto=format&fit=crop" alt="Branding" className="h-full w-full object-cover" />
                 </div>
 
@@ -38,7 +38,7 @@ const Branding = () => {
                 <div className="mx-auto grid w-full max-w-[1250px] grid-cols-1 gap-12 py-8 md:py-12 lg:grid-cols-2 lg:gap-24">
 
                     <div>
-                        <p className="mb-4 font-sans text-[10px] font-semibold uppercase tracking-[3px] text-[#666]">
+                        <p className="mb-4 font-sans text-[10px] font-semibold uppercase tracking-[3px] text-text-muted">
                             What We Do
                         </p>
 
@@ -48,7 +48,7 @@ const Branding = () => {
                     </div>
 
                     <div>
-                        <p className="font-sans text-[15px] leading-8 text-[#555]">
+                        <p className="font-sans text-[15px] leading-8 text-text-muted">
                             A strong brand creates recognition, trust, and consistency.
                             We help businesses develop a clear identity and visual
                             direction that can be carried across every customer
@@ -59,11 +59,11 @@ const Branding = () => {
                 </div>
 
                 {/* Services */}
-                <div className="border-t border-[#bdbdbd]">
+                <div className="border-t border-border">
                     <div className="mx-auto grid w-full max-w-[1250px] grid-cols-1 lg:grid-cols-2">
 
-                        <div className="border-b border-[#bdbdbd] py-10 lg:border-b-0 lg:border-r lg:pr-16">
-                            <p className="font-sans text-[10px] font-semibold uppercase tracking-[3px] text-[#666]">
+                        <div className="border-b border-border py-10 lg:border-b-0 lg:border-r lg:pr-16">
+                            <p className="font-sans text-[10px] font-semibold uppercase tracking-[3px] text-text-muted">
                                 Our Approach
                             </p>
                         </div>
@@ -72,7 +72,7 @@ const Branding = () => {
                             {services.map((service, index) => (
                                 <div
                                     key={service}
-                                    className="border-b border-[#bdbdbd] py-6"
+                                    className="border-b border-border py-6"
                                 >
                                     <div className="flex items-center justify-between gap-5">
 
@@ -80,7 +80,7 @@ const Branding = () => {
                                             {service}
                                         </span>
 
-                                        <span className="font-sans text-[12px] text-[#777]">
+                                        <span className="font-sans text-[12px] text-text-muted">
                                             0{index + 1}
                                         </span>
 
@@ -101,7 +101,7 @@ const Branding = () => {
 
                     <a
                         href="/contact"
-                        className="w-fit border border-[#202020] bg-[#202020] px-7 py-3 font-sans text-xs font-semibold uppercase tracking-[1px] text-white transition-all duration-300 hover:bg-transparent hover:text-[#202020]"
+                        className="w-fit border border-brand bg-brand px-7 py-3 font-sans text-xs font-semibold uppercase tracking-[1px] text-surface transition-all duration-300 hover:bg-transparent hover:text-text-main"
                     >
                         Let's Talk
                     </a>
