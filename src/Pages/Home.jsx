@@ -1,3 +1,4 @@
+import SEO from "../Components/SEO";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 
@@ -95,6 +96,8 @@ const Home = () => {
 
   return (
     <main className="relative w-full bg-[#030712] text-white overflow-hidden">
+      <SEO title="Home" description="World-class marketing strategies for ambitious brands." />
+
       {/* Background Glow */}
       <div className="absolute top-[-20%] left-[-10%] w-[50%] h-[50%] rounded-full bg-violet-600/20 blur-[120px] pointer-events-none animate-orb"></div>
       <div className="absolute top-[20%] right-[-10%] w-[40%] h-[40%] rounded-full bg-fuchsia-600/20 blur-[120px] pointer-events-none animate-orb" style={{ animationDelay: '5s' }}></div>

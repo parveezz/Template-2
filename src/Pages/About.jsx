@@ -1,3 +1,4 @@
+import SEO from "../Components/SEO";
 import { Link } from "react-router-dom";
 
 const About = () => {
@@ -63,6 +64,8 @@ const About = () => {
 
   return (
     <main className="w-full bg-surface-muted text-text-main">
+      <SEO title="About Us" description="Learn more about Invertio Marketing." />
+
 
       {/* =====================================================
           HERO

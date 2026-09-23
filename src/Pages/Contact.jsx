@@ -1,3 +1,4 @@
+import SEO from "../Components/SEO";
 import { useState } from "react";
 
 const Contact = () => {
@@ -64,7 +65,7 @@ const Contact = () => {
         body: JSON.stringify(formData),
       });
       const result = await response.json();
-      
+
       if (response.ok) {
         setStatusMessage({ type: 'success', text: result.message || 'Message sent successfully!' });
         setFormData({ name: '', email: '', message: '' });
@@ -80,6 +81,8 @@ const Contact = () => {
 
   return (
     <section className="w-full min-h-screen bg-surface-muted px-5 py-10 text-text-main md:px-8 lg:px-10">
+      <SEO title="Contact" description="Get in touch with us." />
+
 
       <div className="mx-auto w-full max-w-[1250px]">
 
@@ -166,21 +169,21 @@ const Contact = () => {
                 <div className="mt-3 flex gap-3">
                   <a
                     href="#"
-                    className="flex h-7 w-7 items-center justify-center rounded-full border border-brand font-sans text-[11px] transition hover:bg-brand hover:text-surface"
+                    className="flex h-8 w-8 items-center justify-center rounded-full border border-brand font-sans text-[15px] transition hover:bg-brand hover:text-surface"
                   >
                     f
                   </a>
 
                   <a
                     href="#"
-                    className="flex h-7 w-7 items-center justify-center rounded-full border border-brand font-sans text-[11px] transition hover:bg-brand hover:text-surface"
+                    className="flex h-8 w-8 items-center justify-center rounded-full border border-brand font-sans text-[15px] transition hover:bg-brand hover:text-surface"
                   >
                     ◎
                   </a>
 
                   <a
                     href="#"
-                    className="flex h-7 w-7 items-center justify-center rounded-full border border-brand font-sans text-[11px] transition hover:bg-brand hover:text-surface"
+                    className="flex h-8 w-8 items-center justify-center rounded-full border border-brand font-sans text-[15px] transition hover:bg-brand hover:text-surface"
                   >
                     in
                   </a>

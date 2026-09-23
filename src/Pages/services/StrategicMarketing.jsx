@@ -1,3 +1,4 @@
+import SEO from "../../Components/SEO";
 
 
 const StrategicMarketing = () => {
@@ -11,6 +12,8 @@ const StrategicMarketing = () => {
 
     return (
         <section className="w-full min-h-screen bg-surface-muted px-5 py-12 text-text-main md:px-8 lg:px-10">
+      <SEO title="Strategic Marketing" description="Clear marketing strategies built around your business." />
+
             <div className="mx-auto w-full max-w-[1250px]">
 
                 {/* Hero */}

@@ -1,3 +1,4 @@
+import SEO from "../../Components/SEO";
 
 
 const Branding = () => {
@@ -11,6 +12,8 @@ const Branding = () => {
 
     return (
         <section className="w-full min-h-screen bg-surface-muted px-5 py-12 text-text-main md:px-8 lg:px-10">
+      <SEO title="Branding" description="Distinctive brand identities." />
+
             <div className="mx-auto w-full max-w-[1250px]">
 
                 {/* Hero */}
