@@ -30,9 +30,9 @@ const Whitepapers = () => {
                   <h3 className="mb-3 font-sans text-[22px] font-medium leading-tight text-text-main">{paper.title}</h3>
                   <p className="font-sans text-[13px] leading-6 text-text-muted">{paper.desc}</p>
                 </div>
-                <button className="mt-8 w-fit border border-brand bg-brand px-6 py-2.5 font-sans text-[11px] font-semibold uppercase tracking-[1px] text-surface transition-all hover:bg-transparent hover:text-text-main">
+                <a href={`/${paper.title.replace(/\s+/g, '-').toLowerCase()}.pdf`} download={`${paper.title.replace(/\s+/g, '-').toLowerCase()}.pdf`} className="mt-8 flex w-fit cursor-pointer items-center justify-center border border-brand bg-brand px-6 py-2.5 font-sans text-[11px] font-semibold uppercase tracking-[1px] text-surface transition-all hover:bg-transparent hover:text-text-main">
                   Download Free
-                </button>
+                </a>
               </div>
             ))}
           </div>

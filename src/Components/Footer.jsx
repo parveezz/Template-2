@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import { FaLinkedinIn, FaInstagram, FaXTwitter } from "react-icons/fa6";
 
 const Footer = () => {
     const [email, setEmail] = useState("");
@@ -40,10 +41,10 @@ const Footer = () => {
                 {/* =========================
                     MAIN FOOTER LINKS
                 ========================== */}
-                <div className="grid w-full grid-cols-1 gap-10 py-10 sm:grid-cols-2 lg:grid-cols-[2fr_1fr_1fr_1fr_1fr] lg:gap-12">
+                <div className="grid w-full grid-cols-2 gap-x-6 gap-y-10 py-10 md:grid-cols-4 lg:grid-cols-[2fr_1fr_1fr_1fr_1fr] lg:gap-12">
 
                     {/* Logo & Intro */}
-                    <div className="w-full lg:pr-10">
+                    <div className="col-span-2 w-full md:col-span-4 lg:col-span-1 lg:pr-10">
                         <Link
                             to="/"
                             className="inline-flex flex-col items-start text-text-main"
@@ -78,8 +79,6 @@ const Footer = () => {
                         </h3>
                         <div className="flex flex-col gap-4">
                             <Link to="/about" className="w-fit font-sans text-[14px] text-text-muted transition-colors hover:text-text-main">About Us</Link>
-                            <Link to="/careers" className="w-fit font-sans text-[14px] text-text-muted transition-colors hover:text-text-main">Careers</Link>
-                            <Link to="/press" className="w-fit font-sans text-[14px] text-text-muted transition-colors hover:text-text-main">Press & Media</Link>
                             <Link to="/contact" className="w-fit font-sans text-[14px] text-text-muted transition-colors hover:text-text-main">Contact</Link>
                         </div>
                     </div>
@@ -122,14 +121,14 @@ const Footer = () => {
                             
                             {/* Social Links */}
                             <div className="mt-4 flex gap-3">
-                                <a href="#" className="flex h-9 w-9 items-center justify-center rounded-full border border-border font-sans text-[13px] text-text-main transition-all hover:border-brand hover:bg-brand hover:text-surface">
-                                    in
+                                <a href="https://linkedin.com" target="_blank" rel="noreferrer" className="flex h-9 w-9 items-center justify-center rounded-full border border-border font-sans text-[13px] text-text-main transition-all hover:border-brand hover:bg-brand hover:text-surface">
+                                    <FaLinkedinIn size={14} />
                                 </a>
-                                <a href="#" className="flex h-9 w-9 items-center justify-center rounded-full border border-border font-sans text-[13px] text-text-main transition-all hover:border-brand hover:bg-brand hover:text-surface">
-                                    ◎
+                                <a href="https://instagram.com" target="_blank" rel="noreferrer" className="flex h-9 w-9 items-center justify-center rounded-full border border-border font-sans text-[13px] text-text-main transition-all hover:border-brand hover:bg-brand hover:text-surface">
+                                    <FaInstagram size={14} />
                                 </a>
-                                <a href="#" className="flex h-9 w-9 items-center justify-center rounded-full border border-border font-sans text-[13px] text-text-main transition-all hover:border-brand hover:bg-brand hover:text-surface">
-                                    X
+                                <a href="https://x.com" target="_blank" rel="noreferrer" className="flex h-9 w-9 items-center justify-center rounded-full border border-border font-sans text-[13px] text-text-main transition-all hover:border-brand hover:bg-brand hover:text-surface">
+                                    <FaXTwitter size={14} />
                                 </a>
                             </div>
                         </div>
@@ -163,7 +162,7 @@ const Footer = () => {
                             <button
                                 type="submit"
                                 disabled={isSubmitting}
-                                className="h-12 w-full shrink-0 border border-brand bg-brand px-8 font-sans text-[11px] font-semibold uppercase tracking-[1.5px] text-surface transition-all duration-300 hover:bg-transparent hover:text-text-main disabled:opacity-50 sm:w-auto"
+                                className="h-12 w-full shrink-0 cursor-pointer border border-brand bg-brand px-8 font-sans text-[11px] font-semibold uppercase tracking-[1.5px] text-surface transition-all duration-300 hover:bg-transparent hover:text-text-main disabled:cursor-not-allowed disabled:opacity-50 sm:w-auto"
                             >
                                 Subscribe
                             </button>

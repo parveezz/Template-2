@@ -1,5 +1,6 @@
 import SEO from "../Components/SEO";
 import { Link } from "react-router-dom";
+import { FiArrowRight } from "react-icons/fi";
 import { motion } from "framer-motion";
 
 const Home = () => {
@@ -182,7 +183,7 @@ const Home = () => {
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1, delay: 0.3 }}
-            className="mt-16 aspect-[21/9] w-[100vw] relative left-[50%] right-[50%] -ml-[50vw] -mr-[50vw] overflow-hidden bg-surface-muted shadow-[0_0_50px_rgba(139,92,246,0.1)]"
+            className="mt-16 aspect-[4/3] md:aspect-[21/9] w-[100vw] relative left-[50%] right-[50%] -ml-[50vw] -mr-[50vw] overflow-hidden bg-surface-muted shadow-[0_0_50px_rgba(139,92,246,0.1)]"
           >
              <img src="/images/homeimage.avif" alt="Marketing with purpose" className="h-full w-full object-cover" />
           </motion.div>
@@ -343,7 +344,7 @@ const Home = () => {
                   </div>
 
                   <span className="mt-1 font-sans text-[18px] md:text-[20px] text-text-muted transition-transform duration-300 group-hover:translate-x-1">
-                    →
+                    <FiArrowRight />
                   </span>
 
                 </div>
@@ -391,7 +392,7 @@ const Home = () => {
                 <h3 className="mt-4 font-sans text-[20px] font-medium leading-tight text-text-main md:text-[24px]">{study.title}</h3>
                 <p className="mt-4 font-sans text-[14px] leading-7 text-text-muted">{study.description}</p>
                 <div className="mt-8 flex items-center gap-2 font-sans text-[12px] font-semibold uppercase tracking-[1px] text-text-main transition-transform group-hover:translate-x-2">
-                  Read Study <span>→</span>
+                  Read Study <span className="flex items-center"><FiArrowRight /></span>
                 </div>
               </motion.div>
             ))}

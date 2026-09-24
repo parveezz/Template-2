@@ -98,7 +98,7 @@ const About = () => {
           </div>
           
           {/* Hero Image */}
-          <div className="mt-16 aspect-[21/9] w-full overflow-hidden bg-surface-muted">
+          <div className="mt-16 aspect-[4/3] md:aspect-[21/9] w-full overflow-hidden bg-surface-muted">
              <img src="/images/about-team.jpg" alt="About ZIH" className="h-full w-full object-cover" />
           </div>
         </div>

@@ -1,5 +1,6 @@
 import SEO from "../Components/SEO";
 import { useState } from "react";
+import { FaLinkedinIn, FaInstagram, FaFacebookF } from "react-icons/fa6";
 
 const Contact = () => {
   const [openFaq, setOpenFaq] = useState(null);
@@ -168,21 +169,21 @@ const Contact = () => {
 
                 <div className="mt-3 flex gap-3">
                   <a
-                    href="#"
+                    href="#" onClick={(e) => { e.preventDefault(); alert("Redirecting to social profile!"); }}
                     className="flex h-8 w-8 items-center justify-center rounded-full border border-brand font-sans text-[15px] transition hover:bg-brand hover:text-surface"
                   >
                     f
                   </a>
 
                   <a
-                    href="#"
+                    href="#" onClick={(e) => { e.preventDefault(); alert("Redirecting to social profile!"); }}
                     className="flex h-8 w-8 items-center justify-center rounded-full border border-brand font-sans text-[15px] transition hover:bg-brand hover:text-surface"
                   >
                     ◎
                   </a>
 
                   <a
-                    href="#"
+                    href="#" onClick={(e) => { e.preventDefault(); alert("Redirecting to social profile!"); }}
                     className="flex h-8 w-8 items-center justify-center rounded-full border border-brand font-sans text-[15px] transition hover:bg-brand hover:text-surface"
                   >
                     in
@@ -269,7 +270,7 @@ const Contact = () => {
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className="w-full border border-brand bg-brand py-3.5 font-sans text-[13px] font-semibold uppercase tracking-[1px] text-surface transition-all duration-300 hover:bg-surface hover:text-text-main disabled:opacity-50"
+                className="w-full cursor-pointer border border-brand bg-brand py-3.5 font-sans text-[13px] font-semibold uppercase tracking-[1px] text-surface transition-all duration-300 hover:bg-surface hover:text-text-main disabled:cursor-not-allowed disabled:opacity-50"
               >
                 {isSubmitting ? "Submitting..." : "Submit"}
               </button>
@@ -304,7 +305,7 @@ const Contact = () => {
                 <button
                   type="button"
                   onClick={() => toggleFaq(index)}
-                  className="flex w-full items-center justify-between gap-5 py-5 text-left"
+                  className="flex w-full cursor-pointer items-center justify-between gap-5 py-5 text-left"
                 >
                   <span className="font-sans text-[14px] font-semibold text-text-main">
                     {faq.question}

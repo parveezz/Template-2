@@ -46,7 +46,7 @@ const StrategicMarketing = () => {
                 </div>
                 
                 {/* Hero Image */}
-                <div className="mt-12 aspect-[21/9] w-full overflow-hidden bg-surface-muted">
+                <div className="mt-12 aspect-[16/9] md:aspect-[21/9] w-full overflow-hidden bg-surface-muted">
                    <img src="/images/service-strategic.jpg" alt="Strategic Marketing Planning" className="h-full w-full object-cover" />
                 </div>
 

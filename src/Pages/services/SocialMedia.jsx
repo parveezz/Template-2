@@ -46,7 +46,7 @@ const SocialMedia = () => {
                 </div>
                 
                 {/* Hero Image */}
-                <div className="mt-12 aspect-[21/9] w-full overflow-hidden bg-surface-muted">
+                <div className="mt-12 aspect-[16/9] md:aspect-[21/9] w-full overflow-hidden bg-surface-muted">
                    <img src="/images/service-social.jpg" alt="Social Media Strategy" className="h-full w-full object-cover" />
                 </div>
 
