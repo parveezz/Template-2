@@ -38,47 +38,8 @@ const Footer = () => {
             <div className="mx-auto w-full max-w-[1250px] px-5 md:px-8 lg:px-10">
 
                 {/* =========================
-            NEWSLETTER
-        ========================== */}
-                <div className="flex w-full flex-col gap-8 border-b border-border py-10 md:flex-row md:items-center md:justify-between lg:py-12">
-                    <div className="w-full md:max-w-[400px]">
-                        <h3 className="font-sans text-[20px] font-medium leading-tight text-text-main md:text-[24px]">
-                            Insights delivered to your inbox.
-                        </h3>
-                        <p className="mt-3 font-sans text-[13px] leading-6 text-text-muted">
-                            Subscribe to receive our latest thinking on marketing strategy, branding, and growth. No spam, just value.
-                        </p>
-                    </div>
-
-                    <form className="flex w-full flex-col gap-4 md:max-w-[450px]" onSubmit={handleNewsletterSubmit}>
-                        <div className="flex w-full flex-col gap-4 sm:flex-row">
-                            <input
-                                type="email"
-                                value={email}
-                                onChange={(e) => setEmail(e.target.value)}
-                                required
-                                placeholder="Enter your email address"
-                                className="h-12 w-full flex-1 border-b border-[#777] bg-transparent px-1 font-sans text-[14px] text-text-main outline-none placeholder:text-[#888] focus:border-brand"
-                            />
-                            <button
-                                type="submit"
-                                disabled={isSubmitting}
-                                className="h-12 w-full shrink-0 border border-brand bg-brand px-8 font-sans text-[11px] font-semibold uppercase tracking-[1.5px] text-surface transition-all duration-300 hover:bg-transparent hover:text-text-main disabled:opacity-50 sm:w-auto"
-                            >
-                                Subscribe
-                            </button>
-                        </div>
-                        {statusMessage && (
-                            <p className={`font-sans text-[12px] ${statusMessage.type === 'error' ? 'text-red-500' : 'text-green-600'}`}>
-                                {statusMessage.text}
-                            </p>
-                        )}
-                    </form>
-                </div>
-
-                {/* =========================
-            MAIN FOOTER LINKS
-        ========================== */}
+                    MAIN FOOTER LINKS
+                ========================== */}
                 <div className="grid w-full grid-cols-1 gap-10 py-10 sm:grid-cols-2 lg:grid-cols-[2fr_1fr_1fr_1fr_1fr] lg:gap-12">
 
                     {/* Logo & Intro */}
@@ -177,8 +138,47 @@ const Footer = () => {
                 </div>
 
                 {/* =========================
-            BOTTOM FOOTER
-        ========================== */}
+                    NEWSLETTER
+                ========================== */}
+                <div className="flex w-full flex-col gap-8 border-t border-border py-10 md:flex-row md:items-center md:justify-between lg:py-12">
+                    <div className="w-full md:max-w-[400px]">
+                        <h3 className="font-sans text-[20px] font-medium leading-tight text-text-main md:text-[24px]">
+                            Insights delivered to your inbox.
+                        </h3>
+                        <p className="mt-3 font-sans text-[13px] leading-6 text-text-muted">
+                            Subscribe to receive our latest thinking on marketing strategy, branding, and growth. No spam, just value.
+                        </p>
+                    </div>
+
+                    <form className="flex w-full flex-col gap-4 md:max-w-[450px]" onSubmit={handleNewsletterSubmit}>
+                        <div className="flex w-full flex-col gap-4 sm:flex-row">
+                            <input
+                                type="email"
+                                value={email}
+                                onChange={(e) => setEmail(e.target.value)}
+                                required
+                                placeholder="Enter your email address"
+                                className="h-12 w-full flex-1 border-b border-[#777] bg-transparent px-1 font-sans text-[14px] text-text-main outline-none placeholder:text-[#888] focus:border-brand"
+                            />
+                            <button
+                                type="submit"
+                                disabled={isSubmitting}
+                                className="h-12 w-full shrink-0 border border-brand bg-brand px-8 font-sans text-[11px] font-semibold uppercase tracking-[1.5px] text-surface transition-all duration-300 hover:bg-transparent hover:text-text-main disabled:opacity-50 sm:w-auto"
+                            >
+                                Subscribe
+                            </button>
+                        </div>
+                        {statusMessage && (
+                            <p className={`font-sans text-[12px] ${statusMessage.type === 'error' ? 'text-red-500' : 'text-green-600'}`}>
+                                {statusMessage.text}
+                            </p>
+                        )}
+                    </form>
+                </div>
+
+                {/* =========================
+                    BOTTOM FOOTER
+                ========================== */}
                 <div className="flex w-full flex-col gap-5 border-t border-border py-8 md:flex-row md:items-center md:justify-between">
                     <p className="font-sans text-[12px] text-text-muted">
                         © {new Date().getFullYear()} ZIH Marketing Consultancy. All rights reserved.

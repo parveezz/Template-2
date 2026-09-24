@@ -20,10 +20,10 @@ const Blog = () => {
 <div className="py-16">
           <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
             {[
-              { category: 'Strategy', title: 'The Fallacy of Quick Wins in B2B Marketing', date: 'Sept 20, 2026', image: 'https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=800&auto=format&fit=crop' },
-              { category: 'Branding', title: 'Why Your Brand Identity is Losing You Money', date: 'Sept 15, 2026', image: 'https://images.unsplash.com/photo-1493612276216-ee3925520721?q=80&w=800&auto=format&fit=crop' },
-              { category: 'Advertising', title: 'Mastering Paid Social in a Cookie-less World', date: 'Sept 02, 2026', image: 'https://images.unsplash.com/photo-1557426272-fc759fdf7a8d?q=80&w=800&auto=format&fit=crop' },
-              { category: 'SEO', title: 'Technical SEO Checklist for 2027', date: 'Aug 28, 2026', image: 'https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?q=80&w=800&auto=format&fit=crop' }
+              { category: 'Strategy', title: 'The Fallacy of Quick Wins in B2B Marketing', date: 'Sept 20, 2026', image: '/images/blog-strategy.jpg' },
+              { category: 'Branding', title: 'Why Your Brand Identity is Losing You Money', date: 'Sept 15, 2026', image: '/images/blog-branding.jpg' },
+              { category: 'Advertising', title: 'Mastering Paid Social in a Cookie-less World', date: 'Sept 02, 2026', image: '/images/blog-advertising.jpg' },
+              { category: 'SEO', title: 'Technical SEO Checklist for 2027', date: 'Aug 28, 2026', image: '/images/blog-seo-local.jpg' }
             ].map((post, idx) => (
               <div key={idx} className="group cursor-pointer">
                 <div className="mb-4 aspect-[4/3] w-full overflow-hidden bg-surface-muted">

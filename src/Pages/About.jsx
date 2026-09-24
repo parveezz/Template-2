@@ -99,7 +99,7 @@ const About = () => {
           
           {/* Hero Image */}
           <div className="mt-16 aspect-[21/9] w-full overflow-hidden bg-surface-muted">
-             <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=2000&auto=format&fit=crop" alt="About ZIH" className="h-full w-full object-cover" />
+             <img src="/images/about-team.jpg" alt="About ZIH" className="h-full w-full object-cover" />
           </div>
         </div>
       </section>
@@ -147,7 +147,7 @@ const About = () => {
       {/* =====================================================
           OUR STORY / TIMELINE (NEW)
       ====================================================== */}
-      <section className="w-full border-t border-border bg-[#fdfdfd] px-5 py-10 sm:px-8 md:px-10 md:py-10 lg:px-10">
+      <section className="w-full border-t border-border bg-surface px-5 py-10 sm:px-8 md:px-10 md:py-10 lg:px-10">
         <div className="mx-auto w-full max-w-[1250px]">
           <div className="mb-12">
             <p className="mb-5 font-sans text-[10px] font-semibold uppercase tracking-[3px] text-text-muted">

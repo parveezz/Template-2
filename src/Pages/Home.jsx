@@ -105,12 +105,12 @@ const Home = () => {
       {/* =====================================================
           HERO
       ====================================================== */}
-      <section className="w-full px-5 pb-16 pt-10 sm:px-8 md:px-10 md:pb-24 md:pt-16 lg:px-10">
+      <section className="w-full pb-16 pt-10 md:pb-24 md:pt-16">
         <motion.div 
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
-          className="mx-auto w-full max-w-[1250px]"
+          className="mx-auto w-full max-w-[1250px] px-5 sm:px-8 md:px-10 lg:px-10"
         >
 
           <div className="grid min-h-[calc(100vh-120px)] w-full grid-cols-1 items-center gap-12 lg:grid-cols-[1.4fr_0.6fr]">
@@ -182,9 +182,9 @@ const Home = () => {
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1, delay: 0.3 }}
-            className="mt-16 aspect-[21/9] w-full overflow-hidden rounded-2xl bg-surface-muted shadow-[0_0_50px_rgba(139,92,246,0.1)]"
+            className="mt-16 aspect-[21/9] w-[100vw] relative left-[50%] right-[50%] -ml-[50vw] -mr-[50vw] overflow-hidden bg-surface-muted shadow-[0_0_50px_rgba(139,92,246,0.1)]"
           >
-             <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=2000&auto=format&fit=crop" alt="Marketing with purpose" className="h-full w-full object-cover" />
+             <img src="/images/homeimage.avif" alt="Marketing with purpose" className="h-full w-full object-cover" />
           </motion.div>
 
         </motion.div>

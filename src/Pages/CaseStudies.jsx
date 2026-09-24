@@ -20,10 +20,10 @@ const CaseStudies = () => {
         <div className="py-16">
           <div className="grid gap-10 md:grid-cols-2">
             {[
-              { client: 'Fintech Innovators', result: '+210% User Acquisition', desc: 'How we helped a leading fintech startup scale their user base while reducing CAC by 40%.', image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=800&auto=format&fit=crop' },
-              { client: 'EcoRetail', result: '3x ROAS in 90 Days', desc: 'A complete overhaul of paid media strategy for a sustainable fashion brand.', image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=800&auto=format&fit=crop' },
-              { client: 'SaaS Platform X', result: '150% Increase in SQLs', desc: 'Aligning sales and marketing to drive high-quality enterprise leads.', image: 'https://images.unsplash.com/photo-1551434678-e076c223a692?q=80&w=800&auto=format&fit=crop' },
-              { client: 'Local Services Co', result: '#1 Local Search Ranking', desc: 'Dominating local SEO and driving organic inbound phone calls.', image: 'https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?q=80&w=800&auto=format&fit=crop' }
+              { client: 'Fintech Innovators', result: '+210% User Acquisition', desc: 'How we helped a leading fintech startup scale their user base while reducing CAC by 40%.', image: '/images/service-advertising.jpg' },
+              { client: 'EcoRetail', result: '3x ROAS in 90 Days', desc: 'A complete overhaul of paid media strategy for a sustainable fashion brand.', image: '/images/service-strategic.jpg' },
+              { client: 'SaaS Platform X', result: '150% Increase in SQLs', desc: 'Aligning sales and marketing to drive high-quality enterprise leads.', image: '/images/case-study-saas.jpg' },
+              { client: 'Local Services Co', result: '#1 Local Search Ranking', desc: 'Dominating local SEO and driving organic inbound phone calls.', image: '/images/blog-seo-local.jpg' }
             ].map((study, idx) => (
               <div key={idx} className="group overflow-hidden border border-border bg-surface transition-all hover:border-brand">
                 {/* Image */}
